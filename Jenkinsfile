@@ -18,7 +18,7 @@ pipeline {
 
         stage('removing all docker images') {
             steps {
-                sh 'docker rmi $(docker images -q)'
+                sh 'docker image prune -af'
             }
         }
         stage('bringing up the container') {
