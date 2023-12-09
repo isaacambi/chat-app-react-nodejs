@@ -77,7 +77,7 @@ vi Dockerfile
 ```
 
 change directory back the working directory (chat-app-react-nodejs) to create a docker-compose file.
-docker-compose is used to build and run multiple containers at once.
+docker-compose is used to build and run multiple containers at once
 
 ```
 vi docker-compose.yml
