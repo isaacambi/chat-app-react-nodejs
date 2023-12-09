@@ -12,6 +12,7 @@ services:
 
   public:
     build: ./public
+    image: ambiisaac/frontend
     container_name: public
     networks:
       - app-network
@@ -22,6 +23,7 @@ services:
 
   server:
     build: ./server
+    image: ambiisaac/backend
     container_name: server
     networks:
       - app-network
